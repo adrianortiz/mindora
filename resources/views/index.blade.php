@@ -158,7 +158,39 @@
                 <p>¿Deseas más información?</p>
                 <p>Ponte en contacto con nostros, estamos a tus ordenes.</p>
             </div>
-            <a href="#!" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
+            <a href="#!" id="nosotros" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
+        </section>
+    </section>
+
+    <section class="about-us-container">
+        <div>
+            <a href="{{ route('front.index') }}">
+                <img src="{{ asset('/media/app/mindora-logo.png') }}" alt="Mindora Consultores S.A. de C.V." width="81" height="82">
+            </a>
+            <h4>Quienes somos</h4>
+            <p>Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial comercial y farmacéutica.</p>
+        </div>
+        <div>
+            <h4>Analytics e inteligencia comercial</h4>
+            <p>Nuestra especialidad es investigación, la recopilación, la validación y  el análisis de datos para diferentes mercados, a fin de facilitar la toma de decisiones de negocios de las empresas, gestionando y analizando grandes volúmenes de información de mercados B2B, así como  participación de mercado, analytics y modelos predictivos.</p>
+            <h4>Validación y gestión de riesgos</h4>
+            <p>Brindamos soporte al sistema de calidad, validación en procesos, validación de sistemas computarizados, validación de sistemas críticos, calificación de áreas y equipos, mantenimiento del estado calificado, validación de la cadena de red fría y seca, auditorias regulatorias y gestión de riesgos.</p>
+        </div>
+    </section>
+
+
+    <section class="mision-vision-container-full" style='background-image: url("{{ asset('/media/slider/slider-0.png') }}");'>
+        <section class="mision-vision-container-full-b">
+            <section class="mision-vision-container">
+                <div style='background-image: url("{{ asset('/media/app/icon-people.png') }}");'>
+                    <h2>Misión</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis, ante non molestie sagittis, felis turpis vulputate dui, et laoreet quam felis ut odio. Quisque ullamcorper consectetur dolor. Phasellus interdum consequat tortor quis egestas.</p>
+                </div>
+                <div style='background-image: url("{{ asset('/media/app/icon-people.png') }}");'>
+                    <h2>Visión</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis, ante non molestie sagittis, felis turpis vulputate dui, et laoreet quam felis ut odio.</p>
+                </div>
+            </section>
         </section>
     </section>
 @endsection

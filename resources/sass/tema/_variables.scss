@@ -1,5 +1,9 @@
 *, html, body {
   font-family: 'Poppins', sans-serif;
+  &:focus {
+    border: solid 0px #49C4EE;
+    outline: none;
+  }
 }
 
 // Body

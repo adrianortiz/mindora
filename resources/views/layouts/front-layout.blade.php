@@ -37,7 +37,7 @@
                     <a href="{{ route('front.index') }}" class="menu-link-active">Inicio</a>
                 </li>
                 <li>
-                    <a href="#!">Nosotros</a>
+                    <a href="{{ route('front.index') }}/#nosotros">Nosotros</a>
                 </li>
                 <li>
                     <a href="#!">Servicios</a>
@@ -58,7 +58,17 @@
         </div>
     </div>
 </header>
+
 @yield('content')
+
+<footer>
+    <section class="footer-container">
+
+    </section>
+</footer>
+<section class="footer-codizer">
+
+</section>
 
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 @yield('extra-js')

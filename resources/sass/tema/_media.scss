@@ -1,3 +1,195 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 859px) {
+  .services-container {
 
+    height: 346px;
+    padding: 0 14px;
+
+    .services-container-item {
+      height: 210px;
+
+      .services-container-item-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-image: linear-gradient(215deg, rgba(22,37,37,0.60) 8%, rgba(52,52,52,0.54) 84%);
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+
+        h3 {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and  (max-width: 830px){
+
+  .mision-vision-container-full {
+    .mision-vision-container-full-b {
+      .mision-vision-container {
+        div {
+          padding: 20px 20px 20px 20px;
+          height: 336px;
+          margin: 12px;
+          @include prefixer(width, calc(50% - 24px));
+
+          &:first-child {
+            margin: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .services-container {
+
+    height: 446px;
+    padding: 0 14px;
+
+    .services-container-item {
+      @include prefixer(width, calc(50% - 16px));
+      height: 160px;
+      background-color: $green-100;
+      margin: 8px;
+      border-radius: 20px;
+
+
+      &:hover {
+        transform: scale(1);
+        box-shadow: 0 2px 30px 0 rgba(32,77,78,0.36);
+
+        .services-container-item-bg {
+          background-image: linear-gradient(215deg, rgba(1,48,48,0.6) 8%, rgba(5,57,57,0.54) 84%);
+        }
+      }
+
+      .services-container-item-bg {
+        box-shadow: 0 2px 30px 0 rgba(32,77,78,0.2);
+        border-radius: 20px;
+
+        h3 {
+          font-size: 1.2em;
+        }
+
+        a {
+          opacity: 1;
+          border: 1px solid rgba($white, 0);
+          background: rgba($white,1);
+          color: $green-600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 659px) {
+
+  .contact-us-container-full {
+    .contact-us-container {
+      text-align: center;
+      div {
+        float: inherit !important;
+        width: 100%;
+      }
+
+      a {
+        float: inherit !important;
+      }
+    }
+  }
+
+
+  .about-us-container {
+    div {
+      width: 100%;
+      padding-top: 0;
+
+      &:first-child {
+        width: 100%;
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 0;
+        a {
+          img {
+            padding-left: 0px;
+            margin-bottom: 16px;
+          }
+        }
+
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 559px) {
+  .mision-vision-container-full {
+    .mision-vision-container-full-b {
+      .mision-vision-container {
+        div {
+          padding: 20px 20px 20px 20px;
+          height: 300px;
+          margin: 0px;
+          @include prefixer(width, calc(100% - 0px));
+
+          &:first-child {
+            margin: 0px;
+            margin-bottom: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .autoplay-slider {
+
+    .slider-item {
+
+      .slider-bg-item {
+
+        .slider-info-item {
+          padding: 140px 16px 0 16px;
+
+          h2 {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+          }
+
+          h1 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 374px) {
+  .services-container {
+
+    .services-container-item {
+
+      .services-container-item-bg {
+        padding: 12px;
+        h3 {
+          font-size: 0.98em;
+        }
+      }
+    }
+  }
 }
