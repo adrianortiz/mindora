@@ -46,6 +46,50 @@
   }
 }
 
+@media screen and (max-width: 764px) {
+  .header-container {
+    .header-container-b {
+      .header-container-b-items {
+        .header-destop-menu {
+          li {
+            a {
+              margin-right: 14px !important;
+            }
+
+            a.btn-header-contact {
+              height: 32px;
+              margin-top: -3px;
+              border-radius: 32px;
+              padding: 10px 23px !important;
+              border: solid 1px rgba($green-600, 0.2);
+              background-size: 18px auto !important;
+              background-position: center center;
+              background-repeat: no-repeat;
+
+              span {
+                display: none;
+              }
+            }
+
+            a.btn-header-social {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  footer {
+    .footer-container {
+      div {
+        width: 50% !important;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 690px) {
   .services-container {
 
@@ -82,6 +126,32 @@
           border: 1px solid rgba($white, 0);
           background: rgba($white,1);
           color: $green-600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  body {
+    padding-top: 54px;
+  }
+
+  .mobile-menu-container-header {
+    display: block !important;
+  }
+
+  .header-container {
+    height: 56px !important;
+
+    .header-container-a {
+      display: none;
+    }
+    .header-container-b {
+      .header-container-b-items {
+        .header-destop-menu {
+          display: none;
         }
       }
     }
@@ -128,7 +198,47 @@
       }
     }
   }
+
+  footer {
+    .footer-container {
+      div {
+        text-align: center;
+        width: 100% !important;
+        border-right: solid 0px $green-100;
+        border-bottom: solid 1px rgba($green-600, 0.2);
+
+        &:last-child {
+          padding-top: 0;
+        }
+
+        ul.footer-contact {
+          padding: 0 auto;
+          margin: 0 auto;
+          margin-top: 24px;
+          text-align: center;
+          max-width: 320px;
+
+          li {
+            text-align: center;
+            margin: 0;
+
+            &:first-child a {
+            }
+            a {
+              margin: 4px;
+            }
+          }
+        }
+
+        h2.footer-website-title {
+          padding-top: 20px;
+          border-top: solid 1px rgba($green-600, 0.2);
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 559px) {
   .mision-vision-container-full {
