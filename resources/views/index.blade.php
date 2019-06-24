@@ -16,7 +16,7 @@
                 <div class="slider-info-item">
                     <h2>Especialistas en</h2>
                     <h1>Soluciones</h1>
-                    <a href="#!" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
                 </div>
             </div>
         </div>
@@ -25,7 +25,7 @@
                 <div class="slider-info-item">
                     <h2>Especialistas en</h2>
                     <h1>Soluciones</h1>
-                    <a href="#!" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@
                 <div class="slider-info-item">
                     <h2>Especialistas en</h2>
                     <h1>Soluciones</h1>
-                    <a href="#!" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                 <div class="slider-info-item">
                     <h2>Especialistas en</h2>
                     <h1>Soluciones</h1>
-                    <a href="#!" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
                 </div>
             </div>
         </div>
@@ -158,7 +158,7 @@
                 <p>¿Deseas más información?</p>
                 <p>Ponte en contacto con nostros, estamos a tus ordenes.</p>
             </div>
-            <a href="#!" id="nosotros" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
+            <a href="{{ route('front.contact') }}" id="nosotros" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
         </section>
     </section>
 

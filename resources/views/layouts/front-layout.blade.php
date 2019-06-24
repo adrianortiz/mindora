@@ -29,7 +29,7 @@
                 <a href="{{ route('front.index') }}/#servicios" style='background-image: url("{{ asset('/media/app/icon-mobile-service.png') }}");'>Servicios</a>
             </li>
             <li>
-                <a href="#!" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-mobile-mail.png') }}");'><span>Contacto</span></a>
+                <a href="{{ route('front.contact') }}" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-mobile-mail.png') }}");'><span>Contacto</span></a>
             </li>
             <li>
                 <a href="#!" target="_blank" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
@@ -87,7 +87,7 @@
                     <a href="{{ route('front.index') }}/#servicios">Servicios</a>
                 </li>
                 <li>
-                    <a href="#!" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-email.png') }}");'><span>Contacto</span></a>
+                    <a href="{{ route('front.contact') }}" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-email.png') }}");'><span>Contacto</span></a>
                 </li>
                 <li>
                     <a href="#!" target="_blank" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
