@@ -1,0 +1,182 @@
+.header-container {
+  width: 100%;
+  height: 86px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+
+  .header-container-a {
+    width: 100%;
+    height: 30px;
+    background: $green-100;
+    @include box-sizing(border-box);
+    @include transition(.3s ease);
+
+    .header-container-a-items {
+      padding: 0 auto;
+      margin: 0 auto;
+      padding: 5px 14px 0 14px;
+      max-width: 1024px;
+      height: 30px;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      ul {
+        padding: 0;
+        margin: 0;
+        float: right;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+
+        li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          float: left;
+          @include box-sizing(border-box);
+          @include transition(.3s ease);
+
+          &:nth-child(1) {
+            padding-right: 10px;
+            border-right: solid 1px rgba($green-600, 0.13);
+            margin-right: 10px;
+          }
+
+          a {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            color: $green-600 !important;
+            font-size: 0.84em;
+            @include box-sizing(border-box);
+            @include transition(.3s ease);
+
+            &:hover {
+              color: rgba($green-600, 0.5) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-container-b {
+    width: 100%;
+    height: 56px;
+    background: $white;
+    @include box-sizing(border-box);
+    @include transition(.3s ease);
+
+    .header-container-b-items {
+      padding: 0 auto;
+      margin: 0 auto;
+      padding: 0 14px;
+      max-width: 1024px;
+      height: 56px;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      .main-logo {
+        float: left;
+        width: 120px;
+        height: 56px;
+        text-decoration: none;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+        opacity: 1;
+        background-size: 100% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      ul {
+        float: right;
+
+        li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          float: left;
+          @include box-sizing(border-box);
+          @include transition(.3s ease);
+
+          a {
+            float: left;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $text-black-color;
+            margin: 6px;
+            margin-right: 36px;
+            @include box-sizing(border-box);
+            @include transition(.3s ease);
+            font-size: 0.9em;
+            font-weight: 500;
+            &:hover {
+              opacity: 0.6;
+            }
+          }
+
+          a.btn-header-contact {
+            font-size: 0.84em;
+            margin: 6px;
+            margin-top: -3px;
+            background-color: $green-100;
+            color: $green-600;
+            padding: 10px 14px 6px 36px;
+            border-radius: 32px;
+
+            opacity: 1;
+            background-size: 14px auto;
+            background-position: 14px center;
+            background-repeat: no-repeat;
+            @include box-sizing(border-box);
+            @include transition(.3s ease);
+
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+
+          a.btn-header-social {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin: 6px;
+            margin-top: -3px;
+            background-color: $green-600;
+            border-radius: 32px;
+
+            opacity: 1;
+            background-size: 100% auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+            @include box-sizing(border-box);
+            @include transition(.3s ease);
+
+            &:hover {
+              opacity: 0.7;
+            }
+
+            &:last-child {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu-link-active {
+  color: $green-300 !important;
+}

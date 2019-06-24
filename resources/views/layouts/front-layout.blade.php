@@ -16,6 +16,48 @@
 </head>
 <body>
 
+<header class="header-container">
+    <div class="header-container-a">
+        <div class="header-container-a-items">
+            <ul>
+                <li>
+                    <a href="tel:5537325400">Tel: (55) 3732 5400</a>
+                </li>
+                <li>
+                    <a href="mailto:contacto@mindora.com.mx">contacto@mindora.com.mx</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-container-b">
+        <div class="header-container-b-items">
+            <a href="{{ route('front.index') }}" class="main-logo" style='background-image: url("{{ asset('/media/app/mindora.png') }}");'></a>
+            <ul>
+                <li>
+                    <a href="{{ route('front.index') }}" class="menu-link-active">Inicio</a>
+                </li>
+                <li>
+                    <a href="#!">Nosotros</a>
+                </li>
+                <li>
+                    <a href="#!">Servicios</a>
+                </li>
+                <li>
+                    <a href="#!" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-email.png') }}");'>Contacto</a>
+                </li>
+                <li>
+                    <a href="#!" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
+                </li>
+                <li>
+                    <a href="#!" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-facebook.png') }}");'></a>
+                </li>
+                <li>
+                    <a href="#!" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-twitter.png') }}");'></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
 @yield('content')
 
 <script src="{{ asset('js/jquery.min.js') }}"></script>

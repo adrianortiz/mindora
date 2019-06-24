@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
 
 // Variables
 @import "tema/variables";
@@ -9,6 +9,9 @@
 
 // base
 // theme
+@import "tema/header";
+@import "tema/slider";
+@import "tema/body";
 @import "tema/media";
 
 @import "base/form";
