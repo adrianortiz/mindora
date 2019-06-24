@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   z-index: 10;
+  box-shadow: 0 2px 30px 0 rgba(32,77,78,0.1);
   @include box-sizing(border-box);
   @include transition(.3s ease);
 

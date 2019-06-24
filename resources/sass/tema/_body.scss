@@ -143,11 +143,13 @@ h1, h2, h3, h4, h5, p {
     @include transition(.3s ease);
 
     .analysis-title-container {
-      padding: 24px 14px 0 14px;
+      padding: 24px 14px 14px 14px;
       @include box-sizing(border-box);
       @include transition(.3s ease);
+      display: block;
 
       h2 {
+        display: block;
         text-align: center;
         font-size: 1.1em;
         color: $green-600;
@@ -219,3 +221,225 @@ h1, h2, h3, h4, h5, p {
     }
   }
 }
+
+.analysis-question-container {
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 1024px;
+  height: auto;
+  margin-top: 30px;
+  padding: 16px;
+  background-color: transparent;
+  margin-bottom: 40px;
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+
+  p.analysis-question-container-text-a {
+    max-width: 870px;
+    padding: 0 auto;
+    margin: 0 auto;
+    color: $black;
+    font-size: 0.85em;
+    line-height: 20px;
+    padding: 4px;
+  }
+
+  p.analysis-question-container-text-b {
+    max-width: 630px;
+    padding: 0 auto;
+    margin: 0 auto;
+    padding: 16px;
+    margin-top: 30px;
+    color: $green-600;
+    font-size: 0.85em;
+    line-height: 20px;
+    background-color: $green-100;
+    border-radius: 9px;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+
+
+  .analysis-question-container-block {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    @include box-sizing(border-box);
+    @include transition(.3s ease);
+
+    .analysis-question-container-block-a {
+      width: 30%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      p {
+        padding: 14px;
+        height: 100px;
+        font-size: 0.86em;
+        color: $white;
+        background-color: $green-600;
+        border-radius: 20px;
+        line-height: 19px;
+        font-weight: 300;
+        margin: 12px 0;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+      }
+    }
+
+    .analysis-question-container-block-b {
+      width: 40%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      div {
+        max-width: 210px;
+        padding: 0 auto;
+        margin: 0 auto;
+        height: auto;
+        background-color: $green-100;
+        padding: 28px 22px 18px 22px;
+        margin-top: 20px;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+        border-radius: 21px;
+
+        p {
+          width: 100%;
+          padding: 15px;
+          text-align: center;
+          background-color: $white;
+          @include box-sizing(border-box);
+          @include transition(.3s ease);
+          margin-bottom: 12px;
+          border-radius: 10px;
+          font-size: 0.86em;
+
+          &:first-child {
+            border-radius: 20px;
+            height: 90px;
+            background-size: 67px auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+
+    .analysis-question-container-block-c {
+      width: 30%;
+      height: 100%;
+      float: left;
+      overflow: hidden;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      p {
+        padding: 14px;
+        height: 100px;
+        font-size: 0.86em;
+        color: $white;
+        background-color: $green-600;
+        border-radius: 20px;
+        line-height: 19px;
+        font-weight: 300;
+        margin: 12px 0;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+      }
+    }
+  }
+}
+
+
+
+.contact-us-container-full {
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  background-color: $green-100;
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+
+  .contact-us-container {
+    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 1024px;
+    height: auto;
+    padding: 36px 16px 30px 16px;
+    background-color: transparent;
+    overflow: hidden;
+    @include box-sizing(border-box);
+    @include transition(.3s ease);
+
+    div {
+      float: left;
+      height: auto;
+      overflow: hidden;
+      @include prefixer(width, calc(100% - 186px));
+
+      p {
+        font-size: 0.94em;
+        color: $green-600;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+
+    a {
+      float: right;
+      padding: 10px 18px 8px 46px;
+      color: $white;
+      background-color: $green-600;
+      border-radius: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      background-size: 20px auto;
+      background-position: 14px center;
+      background-repeat: no-repeat;
+      border: solid 1px rgba(#020708, 0.08);
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+    }
+  }
+}
+
+
+/*
+
+font-family: Poppins-Regular;
+font-size: 14px;
+color: rgba(255,255,255,0.70);
+text-align: left;
+
+background: #151515;
+box-shadow: 0 18px 47px 0 rgba(0,0,0,0.40);
+
+
+
+font-family: Poppins-Regular;
+font-size: 14px;
+color: rgba(0,0,0,0.70);
+text-align: left;
+
+background: #FFFFFF;
+box-shadow: 0 13px 42px 0 rgba(0,0,0,0.17);
+
+
+
+background: rgba(0,78,78,0.88);
+*/
