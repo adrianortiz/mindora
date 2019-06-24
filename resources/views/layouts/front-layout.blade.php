@@ -130,7 +130,7 @@
 
             <ul class="footer-contact">
                 <li>
-                    <a href="{{ route('front.index') }}" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'><span>Contacto</span></a>
+                    <a href="{{ route('front.contact') }}" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'><span>Contacto</span></a>
                 </li>
                 <li>
                     <a href="#!" target="_blank" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
