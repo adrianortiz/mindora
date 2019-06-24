@@ -79,7 +79,51 @@
                 <a href="#!">Leer más</a>
             </div>
         </div>
+    </section>
 
+    <section class="analysis-container-full">
+        <section class="analysis-container">
+            <div class="analysis-title-container">
+                <h2>Análisis de sectores e industria de negocios</h2>
+            </div>
+            <div class="autoplay-slider-analysis">
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-01.png') }}");'>
+                        <p>Sector bancario</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-02.png') }}");'>
+                        <p>E-commerce</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-03.png') }}");'>
+                        <p>Agregadores</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-04.png') }}");'>
+                        <p>Valeras</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-05.png') }}");'>
+                        <p>Sector automotriz</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-06.png') }}");'>
+                        <p>Grandes superficies</p>
+                    </div>
+                </a>
+                <a href="#!">
+                    <div style='background-image: url("{{ asset('/media/app/icon-analysis-07.png') }}");'>
+                        <p>Entretenimiento</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </section>
 @endsection
 
@@ -95,6 +139,48 @@
                 autoplaySpeed: 4000,
                 draggable: true,
                 dots: true
+            });
+
+            $('.autoplay-slider-analysis').slick({
+                arrows: false,
+                slidesToShow: 5,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 4000,
+                draggable: true,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 720,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 376,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }]
+
             });
         });
     </script>

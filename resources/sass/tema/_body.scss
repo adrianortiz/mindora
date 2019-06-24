@@ -3,6 +3,17 @@ body {
   padding-top: 86px;
 }
 
+a {
+  text-decoration: none;
+  color: $text-black-color;
+}
+
+h1, h2, h3, h4, h5, p {
+  padding: 0;
+  margin: 0;
+  color: $text-black-color;
+}
+
 .services-container {
   padding: 0 auto;
   margin: 0 auto;
@@ -11,6 +22,8 @@ body {
   background-color: transparent;
   @include box-sizing(border-box);
   @include transition(.3s ease);
+  padding-bottom: 30px;
+  overflow: hidden;
 
   .services-title-container {
     padding: 24px 14px 0 14px;
@@ -103,6 +116,104 @@ body {
           border: 1px solid rgba($white, 0);
           background: rgba($white,1);
           color: $green-600;
+        }
+      }
+    }
+  }
+}
+
+
+.analysis-container-full {
+  padding: 0 auto;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  background-color: $green-100;
+  @include box-sizing(border-box);
+  @include transition(.3s ease);
+  overflow: hidden;
+
+  .analysis-container {
+    padding: 0 auto;
+    margin: 0 auto;
+    max-width: 1024px;
+    height: auto;
+    background-color: transparent;
+    @include box-sizing(border-box);
+    @include transition(.3s ease);
+
+    .analysis-title-container {
+      padding: 24px 14px 0 14px;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      h2 {
+        text-align: center;
+        font-size: 1.1em;
+        color: $green-600;
+        padding: 0;
+        margin: 0;
+        margin-top: 18px;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+        height: 30px;
+        @include box-sizing(border-box);
+        @include transition(.3s ease);
+      }
+    }
+
+    .autoplay-slider-analysis {
+      width: 100%;
+      height: 130px;
+      background-color: transparent;
+      @include box-sizing(border-box);
+      @include transition(.3s ease);
+
+      a {
+        position: relative;
+        width: 20px;
+        height: 124px;
+        background-color: transparent;
+
+        div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include prefixer(width, calc(100% - 24px));
+          height: 100%;
+          margin: 0 12px;
+          background-color: $white;
+          border-radius: 20px;
+
+          background-size: 56px auto;
+          background-position: center 20px;
+          background-repeat: no-repeat;
+
+          @include box-sizing(border-box);
+          @include transition(.3s ease);
+
+          &:hover {
+            background-color: $green-600;
+
+            p {
+              color: $white;
+            }
+          }
+
+          p {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 12px;
+            overflow: hidden;
+            font-size: 14px;
+            color: $green-600;
+            @include box-sizing(border-box);
+            @include transition(.3s ease);
+          }
+
         }
       }
     }
