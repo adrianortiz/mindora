@@ -23,10 +23,10 @@
                 <a href="{{ route('front.index') }}" class="menu-link-active" style='background-image: url("{{ asset('/media/app/icon-mobile-home.png') }}");'>Inicio</a>
             </li>
             <li>
-                <a href="{{ route('front.index') }}/#nosotros" style='background-image: url("{{ asset('/media/app/icon-mobile-us.png') }}");'>Nosotros</a>
+                <a href="{{ route('front.index') }}/#nosotros" class="menu-access" style='background-image: url("{{ asset('/media/app/icon-mobile-us.png') }}");'>Nosotros</a>
             </li>
             <li>
-                <a href="{{ route('front.index') }}/#servicios" style='background-image: url("{{ asset('/media/app/icon-mobile-service.png') }}");'>Servicios</a>
+                <a href="{{ route('front.index') }}/#servicios" class="menu-access" style='background-image: url("{{ asset('/media/app/icon-mobile-service.png') }}");'>Servicios</a>
             </li>
             <li>
                 <a href="{{ route('front.contact') }}" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-mobile-mail.png') }}");'><span>Contacto</span></a>
@@ -204,6 +204,11 @@
         $(window).resize(function() {
             if ($(window).width()==w) return;
             w = $(window).width();
+            toggleClass2(document.querySelector('.menu'), 'menu--open');
+            toggleClass2(document.querySelector('.menu-btn'), 'menu-btn--on');
+        });
+
+        $('.menu-access').click(function() {
             toggleClass2(document.querySelector('.menu'), 'menu--open');
             toggleClass2(document.querySelector('.menu-btn'), 'menu-btn--on');
         });
