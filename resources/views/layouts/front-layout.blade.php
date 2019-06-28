@@ -32,6 +32,9 @@
                 <a href="{{ route('front.contact') }}" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-mobile-mail.png') }}");'><span>Contacto</span></a>
             </li>
             <li>
+                <a href="{{ route('front.index') }}/admin" style='background-image: url("{{ asset('/media/app/icon-mobile-us.png') }}"); background-color: #004848; color: #FFF'>Administración</a>
+            </li>
+            <li>
                 <a href="#!" target="_blank" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
             </li>
             <li>
@@ -57,7 +60,10 @@
                     <a href="tel:5537325400">Tel: (55) 3732 5400</a>
                 </li>
                 <li>
-                    <a href="mailto:contacto@mindora.com.mx">contacto@mindora.com.mx</a>
+                    <a href="mailto:contacto@mindora.com.mx">Mail: contacto@mindora.com.mx</a>
+                </li>
+                <li>
+                    <a href="{{ route('front.index') }}/admin">Administración</a>
                 </li>
             </ul>
         </div>

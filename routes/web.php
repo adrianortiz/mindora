@@ -40,3 +40,7 @@ Route::get('/artisan-clear', function() {
     // Cache::flush();
     return "Cleared!";
 });
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

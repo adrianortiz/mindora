@@ -41,11 +41,14 @@
           float: left;
           @include box-sizing(border-box);
           @include transition(.3s ease);
+          padding-right: 10px;
+          border-right: solid 1px rgba($green-600, 0.13);
+          margin-right: 10px;
 
-          &:nth-child(1) {
-            padding-right: 10px;
-            border-right: solid 1px rgba($green-600, 0.13);
-            margin-right: 10px;
+          &:nth-child(3) {
+            padding-right: 0;
+            border-right: solid 0px rgba($green-600, 0.13);
+            margin-right: 0;
           }
 
           a {
