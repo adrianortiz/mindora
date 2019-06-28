@@ -1,0 +1,97 @@
+body {
+    background-color: #F0F9F9 !important;
+}
+
+.voyager {
+    background-color: #F0F9F9 !important;
+}
+
+.btn-primary {
+    background-color: #004848 !important;
+    border-color: #004848 !important;
+}
+
+.btn-danger {
+    background-color: #EB5D56 !important;
+    border-color: #EB5D56 !important;
+}
+
+.btn-succes, .btn-success, .btn-add-new, .btn-info, .btn-warning {
+    background-color: #FFF !important;
+    color: #004848 !important;
+    border: solid 1px #B8BFC5 !important;
+}
+
+.navbar-top {
+    background-color: #FFFF !important;
+    color: #B8BFC5 !important;
+    box-shadow: 0 2px 30px 0 rgba(32,77,78,0.1) !important;
+}
+
+.navbar-header .breadcrumb {
+    background-color: #FFF !important;
+    border-color: #B8BFC5 !important;
+    color: #B8BFC5 !important;
+}
+
+#files li .file_link.selected, #files li .file_link:hover {
+    background-color: #F0F9F9 !important;
+    border-color: #004848 !important;
+    color: #004848 !important;
+}
+
+#files li .file_link.selected h4, #files li .file_link:hover h4 {
+    color: #004848 !important;
+}
+
+.side-menu .navbar-header {
+    background-color: #FFF !important;
+    border-color: #FFF !important;
+    color: #004848 !important;
+}
+
+.navbar-brand .title {
+    color: #004848 !important;
+}
+
+#adminmenu .navbar-nav .active {
+    background: #004848 !important;
+}
+
+#adminmenu .navbar-nav li:hover a {
+    background: #004848 !important;
+}
+
+.table-responsive img {
+   height: 36px !important;
+   width: auto !important;
+}
+
+.voyager .pagination .active>a, .voyager .pagination .active>a:focus, .voyager .pagination .active>a:hover, .voyager .pagination .active>span:focus, .voyager .pagination .active>span:hover, .voyager .pagination .active span {
+    background-color: #004848 !important;
+    border-color: #004848 !important;
+    color: #FFF !important;
+}
+
+#filemanager #toolbar {
+    padding: 4px 20px !important;
+    background-color: #B8BFC5 !important;
+}
+
+.admin-section-title h3 {
+    font-size: 22px !important;
+    text-shadow: none !important;
+}
+
+.admin-section-title h3 i {
+    display: none !important;
+}
+
+.page-title {
+    text-shadow: none !important;
+    color: #004848 !important;
+}
+
+.media_breadcrumb {
+    color: #004848 !important;
+}

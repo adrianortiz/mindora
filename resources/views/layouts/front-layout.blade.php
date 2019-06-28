@@ -9,9 +9,27 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Mindora" />
     <meta property="og:description"   content="consultora" />
-    <meta property="og:image"         content="https://www.mindora.com.mx/cover.jpg" />
+    <meta property="og:image"         content="{{ asset('/media/app/cover.png') }}" />
     <link href="{{ asset('css/index.min.css') }}" rel="stylesheet">
-    <style> select.custom-select { background-image: url("{{ asset('/media/app/btn-select.png') }}"); !important;}</style>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ route('front.index')}}/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ route('front.index')}}/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ route('front.index')}}/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ route('front.index')}}/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ route('front.index')}}/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ route('front.index')}}/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ route('front.index')}}/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ route('front.index')}}/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ route('front.index')}}/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ route('front.index')}}/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ route('front.index')}}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ route('front.index')}}/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ route('front.index')}}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{ route('front.index')}}/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ route('front.index')}}/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     @yield('extra-css')
 </head>
 <body>
@@ -32,7 +50,7 @@
                 <a href="{{ route('front.contact') }}" class="btn-header-contact" style='background-image: url("{{ asset('/media/app/icon-mobile-mail.png') }}");'><span>Contacto</span></a>
             </li>
             <li>
-                <a href="{{ route('front.index') }}/admin" style='background-image: url("{{ asset('/media/app/icon-mobile-us.png') }}"); background-color: #004848; color: #FFF'>Administración</a>
+                <a href="{{ route('front.index') }}/admin" target="_blank" style='background-image: url("{{ asset('/media/app/icon-mobile-us.png') }}"); background-color: #004848; color: #FFF'>Administración</a>
             </li>
             <li>
                 <a href="#!" target="_blank" class="btn-header-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
@@ -63,7 +81,7 @@
                     <a href="mailto:contacto@mindora.com.mx">Mail: contacto@mindora.com.mx</a>
                 </li>
                 <li>
-                    <a href="{{ route('front.index') }}/admin">Administración</a>
+                    <a href="{{ route('front.index') }}/admin" target="_blank">Administración</a>
                 </li>
             </ul>
         </div>
@@ -118,7 +136,7 @@
                 <img src="{{ asset('/media/app/mindora.png') }}" alt="Mindora Consultores S.A. de C.V." width="118" height="41">
             </a>
             <p><span>Mindora</span> Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial comercial y farmacéutica <span><a
-                            href="#!">Contáctanos.</a></span></p>
+                            href="{{ route('front.contact') }}">Contáctanos.</a></span></p>
 
             <h2>Dirección</h2>
             <p>Ciruelos 295 Fracc. Hacienda Santa Clara Lerma</p>
@@ -217,6 +235,7 @@
         $('.menu-access').click(function() {
             toggleClass2(document.querySelector('.menu'), 'menu--open');
             toggleClass2(document.querySelector('.menu-btn'), 'menu-btn--on');
+            $('.m-modal-container-bg').fadeOut();
         });
     });
 </script>

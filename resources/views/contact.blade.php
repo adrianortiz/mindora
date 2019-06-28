@@ -13,10 +13,12 @@
     <div id="map"></div>
 
     <section class="contact-container-full">
-        <section class="contact-container-full-b">
-            <section class="contact-container">
+            <section class="contact-container" style='background-image: url("{{ asset('/media/slider/slider-0.png') }}");'>
                 <div class="contact-container-form">
-                    <h2>Formulario de contacto</h2>
+                    <div class="form-title" style='background-image: url("{{ asset('/media/app/icon-form-contact.png') }}");'>
+                        <h2>Contacto</h2>
+                        <p>Formulario de contacto</p>
+                    </div>
                     <div class="form-contact">
 
                         @if ($errors->any())
@@ -33,20 +35,23 @@
 
                         <form method="POST" action="{{ route('website.contact.mail') }}" class="needs-validation" novalidate="" autocomplete="on">
                             @csrf
-                            <div class="input-container" style="width: 48%; display: inline-block">
-                                <label for="name">Nombre(s):</label>
-                                <input type="text" id="name" name="name" placeholder="Nombre(s)" value="{{ old('name') }}" required/>
-                                @error('name')
-                                <span>{{ $message }}</span>
-                                @enderror
+                            <div style="display: block">
+                                <div class="input-container input-container-50 input-container-50-a">
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="name" name="name" placeholder="Nombre" value="{{ old('name') }}" required/>
+                                    @error('name')
+                                    <span>{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="input-container input-container-50 input-container-50-b">
+                                    <label for="last_name">Apellidos:</label>
+                                    <input type="text" id="last_name" name="last_name" placeholder="Apellido" value="{{ old('last_name') }}" required/>
+                                    @error('last_name')
+                                    <span>{{ $message }}</span>
+                                    @enderror
+                                </div>
                             </div>
-                            <div class="input-container" style="width: 48%; display: inline-block">
-                                <label for="last_name">Apellido(s):</label>
-                                <input type="text" id="last_name" name="last_name" placeholder="Apellido(s)" value="{{ old('last_name') }}" required/>
-                                @error('last_name')
-                                <span>{{ $message }}</span>
-                                @enderror
-                            </div>
+
                             <div class="input-container">
                                 <label for="email">Correo Eletrónico:</label>
                                 <input type="text" id="email" name="email" placeholder="Correo Eletrónico" value="{{ old('email') }}" required/>
@@ -98,15 +103,15 @@
 
                             <div  class="input-container">
                                 <button type="submit">Enviar</button>
-                                <span>* Todos los campos son obligatorios</span>
+                                <span style="text-align: center">* Todos los campos son obligatorios</span>
                             </div>
 
                         </form>
                     </div>
 
                 </div>
-                <div class="contact-container-info" style='background-image: url("{{ asset('/media/slider/slider-0.png') }}");'>
-                    <div>
+                <div class="contact-container-info">
+                    <div class="contact-container-info-div">
 
                         <a href="{{ route('front.index') }}">
                             <img src="{{ asset('/media/app/mindora-white.png') }}" alt="Mindora Consultores S.A. de C.V." width="198" height="65">
@@ -124,24 +129,81 @@
                         <hr>
                         <h2>Horarios de atención:</h2>
                         <p>Lunes a viernes de 9:00 a 18:00 hrs.</p>
+
+                        <section class="btn-contact-social-container">
+                            <a href="#!" target="_blank" class="btn-contact-social" style='background-image: url("{{ asset('/media/app/icon-linkedin.png') }}");'></a>
+                            <a href="#!" target="_blank" class="btn-contact-social" style='background-image: url("{{ asset('/media/app/icon-facebook.png') }}");'></a>
+                            <a href="#!" target="_blank" class="btn-contact-social" style='background-image: url("{{ asset('/media/app/icon-twitter.png') }}");'></a>
+                        </section>
                     </div>
                 </div>
             </section>
-        </section>
     </section>
-
-
 
 @endsection
 
 @section('extra-js')
+
     <script>
+        var marker;
+        var infowindow;
+        var bangaloreA = { lat: 19.3114063, lng: -99.5445811 };
+        var bangaloreB = { lat: 19.313283, lng: -99.544662 };
+
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 19.415310874313878, lng: -99.17608410000003},
-                zoom: 17,
-                scrollwheel: false
+                zoom: 18,
+                center: bangaloreA,
+                zoomControl: true,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.RIGHT_TOP
+                },
+                fullscreenControl: true,
+                fullscreenControlOptions: {
+                    position: google.maps.ControlPosition.TOP_RIGHT
+                },
+                mapTypeControl: false,
+                scaleControl: true,
+                streetViewControl: false,
+                rotateControl: true,
             });
+
+            var contentString = '<div id="content">'+
+                '<div id="siteNotice">'+
+                '</div>'+
+                '<h1 id="firstHeading" class="firstHeading">Mindora</h1>'+
+                '<div id="bodyContent">'+
+                '<p><b>Mindora</b>, Un equipo visionario con líderes especializados con más de 14 años de experiencia en inteligencia comercial comercial y farmacéutica .</p>'+
+                '</div>'+
+                '</div>';
+
+            infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP,
+                position: bangaloreB,
+                title: 'Mindora S.A. de C.V.'
+            });
+
+            marker.addListener('click', toggleBounce);
+
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+
+        function toggleBounce() {
+            if (marker.getAnimation() !== null) {
+                marker.setAnimation(null);
+            } else {
+                marker.setAnimation(google.maps.Animation.BOUNCE);
+            }
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASGLG_X33TnTSWT_ynl3qKkTX2YhrVSeI&callback=initMap" async defer></script>

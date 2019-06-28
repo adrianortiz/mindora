@@ -23,7 +23,7 @@
         margin: 0 auto;
         max-width: 1024px;
         height: 448px;
-        padding: 140px 16px 0 22px;
+        padding: 130px 16px 0 22px;
         @include box-sizing(border-box);
         @include transition(.3s ease);
 
@@ -37,17 +37,18 @@
         h2 {
           font-size: 28px;
           font-weight: 400;
-          line-height: 40px;
+          line-height: 10px;
+          margin-bottom: 14px;
         }
 
         h1 {
           font-size: 60px;
           font-weight: 700;
-          line-height: 69px;
-          margin-bottom: 22px;
+          line-height: 50px;
         }
 
         .btn-slider {
+          margin-top: 22px;
           padding: 10px 18px 8px 44px;
           color: $white;
           background-color: $green-600;
