@@ -31,6 +31,11 @@ Homestead.json
 *.ipr
 .idea/
 
+# VCode project files
+*.vscode
+
+# Sass project files
+*.sass-cache
 
 /Users/codizer/Projects/jobking/.idea/workspace.xml.idea
 .idea
