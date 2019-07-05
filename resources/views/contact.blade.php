@@ -70,10 +70,11 @@
                                 <label for="service">Servicio:</label>
                                 <select id="select" name="service" class="select-css">
                                     <option value="Otro" @if(old('service') == 'Otro') {{ 'selected="selected"' }} @endif >Otro</option>
-                                    <option value="Mercadotecnia" @if(old('service') == 'Estudios de mercado') {{ 'selected="selected"' }} @endif >Estudios de mercado</option>
-                                    <option value="Contabilidad" @if(old('service') == 'Estudio de consumidor') {{ 'selected="selected"' }} @endif >Estudio de consumidor</option>
-                                    <option value="Legal" @if(old('service') == 'Validación de procesos') {{ 'selected="selected"' }} @endif >Validación de procesos</option>
-                                    <option value="Tecnología" @if(old('service') == 'Gestión de riesgos') {{ 'selected="selected"' }} @endif >Gestión de riesgos</option>
+                                    <option value="Estudios de mercado" @if(old('service') == 'Estudios de mercado') {{ 'selected="selected"' }} @endif >Estudios de mercado</option>
+                                    <option value="Estudios de consumidor" @if(old('service') == 'Estudios de consumidor') {{ 'selected="selected"' }} @endif >Estudios de consumidor</option>
+                                    <option value="Inteligencia comercial" @if(old('service') == 'Inteligencia comercial') {{ 'selected="selected"' }} @endif >Inteligencia comercial</option>
+                                    <option value="Validación de procesos" @if(old('service') == 'Validación de procesos') {{ 'selected="selected"' }} @endif >Validación de procesos</option>
+                                    <option value="Gestión de riesgos" @if(old('service') == 'Gestión de riesgos') {{ 'selected="selected"' }} @endif >Gestión de riesgos</option>
                                 </select>
                                 @error('service')
                                 <span>{{ $message }}</span>
@@ -118,12 +119,12 @@
                         </a>
 
                         <h2>Dirección:</h2>
-                        <p>Ciruelos 295 Fracc. Hacienda Santa Clara</p>
+                        <p>Ciruelos 295, Santa Clara</p>
                         <p>Lerma. Estado de México</p>
                         <p>C.P. 52004</p>
                         <hr>
                         <h2>Teléfono:</h2>
-                        <p>(55) 3732 5400</p>
+                        <p style="color: #ffffff !important;">(55) 6481 1572</p>
                         <h2>Correo electrónico:</h2>
                         <p>contacto@mindora.com.mx</p>
                         <hr>

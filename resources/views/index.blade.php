@@ -82,6 +82,7 @@
             </div>
         </div>
     </div>
+
     <div id="show-service-modal-c" class="m-modal-container-bg">
         <div class="m-modal-container">
             <div class="m-modal-container-a">
@@ -92,7 +93,47 @@
                     </div>
                 </div>
                 <div class="m-modal-container-body">
-                    <h3>La validación del proceso está asociada a la recopilación y evaluación de datos durante todo el ciclo de vida de un producto, desde la etapa de diseño del proceso hasta la producción comercial.</h3>
+
+                    <h3 style="margin-bottom: 14px">El  Área de Validación de Mindora Consultores se especializa en la calificación de áreas y equipos, validación de procesos y sistemas críticos, validación de sistemas computarizados, validación de la cadena de suministro red fría y red seca, mapeo de almacenes (temperatura y humedad relativa), calificación de thermos de 2.0 a 8.0 °C/48hrs  y de 15.0 a 25.0 °C /48 hrs.</h3>
+                    <h3 style="margin-bottom: 14px">Asegurando con ello el cumplimiento a normatividad vigente y aplicable como es: NOM-059, Suplemento para el almacenamiento y distribución de insumos para la salud, LGS, RIS</h3>
+                    <h3 style="margin-bottom: 14px; color: #004848;"><strong>Expertise en VALIDACIÓN DE PROCESOS</strong></h3>
+
+                    <h4>Expertise en EQUIPOS</h4>
+                    <h4>Expertos en la calificación de equipos como son:</h4>
+                    <ul>
+                        <li>Cámaras de refrigeración de 2.0 a 8.0 °C.</li>
+                        <li>Mezcladores</li>
+                        <li>Tableteadoras, encapsuldoras</li>
+                        <li>Tanques, llenadoras, agitadores</li>
+                        <li>Hornos</li>
+                        <li>Refrigeradores/congeladores</li>
+                        <li>Bombos</li>
+                        <li>Blisteadoras, etiquetadoras, codificadoras, engargoladoras y encartonadoras</li>
+                        <li>Unidades de transporte de 2.0 a 8.0 °C  y de 15.0 a 25.0 °C</li>
+                    </ul>
+
+                    <h4>Expertos en VALIDACIÓN DE PROCESOS como son:</h4>
+                    <ul>
+                        <li>Inyectables</li>
+                        <li>Sólidos</li>
+                        <li>Líquidos</li>
+                        <li>Semisólidos</li>
+                        <li>Acondicionamiento primario</li>
+                        <li>Acondicionamiento secundario</li>
+                        <li>Cadena de suministro de red fría y seca</li>
+                    </ul>
+
+                    <h4><strong>Ofrecemos:</strong> Cumplimiento a NOM-059 “Diseño del proceso, calificación del proceso y verificación continua del proceso.</h4>
+
+                    <h4>Expertise en VALIDACIÓN DE SISTEMAS COPUTARIZADOS</h4>
+                    <h4>Expertos en VALIDACIÓN DE SISTEMAS COMPUTARIZADOS como son:</h4>
+                    <ul>
+                        <li>SAP</li>
+                        <li>Monitoreo de red fría</li>
+                    </ul>
+                    <h4><strong>Ofrecemos:</strong> Cumplimiento a NOM-059</h4>
+
+                    <h3 style="margin-bottom: 14px">La validación del proceso está asociada a la recopilación y evaluación de datos durante todo el ciclo de vida de un producto, desde la etapa de diseño del proceso hasta la producción comercial.</h3>
 
                     <h4>La validación de procesos durante todo el ciclo de vida de un producto se divide en 3 etapas, según la guía para la validación de procesos de la FDA publicada en 2011 y el anexo 3 del informe técnico 49 de la OMS publicado en 2015.</h4>
                     <ul>
@@ -118,7 +159,23 @@
                     </div>
                 </div>
                 <div class="m-modal-container-body">
-                    <h3>La gestión de riesgos es el proceso de identificar, analizar y responder a factores de riesgo a lo largo de la vida de un proyecto y en beneficio de sus objetivos. La gestión de riesgos adecuada implica el control de posibles eventos futuros. Además, es proactiva, en lugar de reactiva.</h3>
+                    <h3>El área de Gestión de Riesgos de <strong>Mindora Consultores</strong> se especializa en la capacitación e implementación de la gestión de riesgos del sistema de calidad de la organización, con lo que ofrece la implementación de una metodología que consta de tres fases para el cumplimiento a normatividad vigente como es: ISO 9001 y NOM-059 ayudando con ello al enfoque preventivo e implementación de los controles de la operación para la estandarización de procesos, evaluación de impacto a desviaciones y controles de cambio, con lo que se fomenta el trabajo en equipo de la organización y mejora continua.</h3>
+
+                    <div style="width: 100%; text-align: center; margin-top: 16px">
+                        <img style="width: 90%;" src="{{ asset('media/app/service-diagram-a.png') }}" alt="Flujo de riesgos de calidad" >
+                    </div>
+
+                    <h4>Expertise en gestión de riesgos</h4>
+                    <h3 style="margin-bottom: 12px">Capacitación e implementación de una metodología para la gestión de riesgos aplicable a:</h3>
+                    <ul>
+                        <li>Procesos o subprocesos (implementación de controles).</li>
+                        <li>Desviaciones (evaluación de impacto)</li>
+                        <li>Controles de cambio (evaluación de impacto)</li>
+                        <li>Necesidades de clientes interno y externos</li>
+                    </ul>
+                    <div style="width: 100%; text-align: center">
+                        <img style="width: 90%;" src="{{ asset('media/app/service-diagram-b.png') }}" alt="Gestión de riesgos de calidad" >
+                    </div>
 
                     <h4>Respuesta a los riesgos</h4>
                     <ul>
@@ -133,6 +190,42 @@
                         <li>Reducir o dividir los riesgos</li>
                         <li>Proporcionar una base racional para la toma de decisiones en relación con todos los riesgos</li>
                         <li>Planificar</li>
+                    </ul>
+
+                </div>
+                <div class="m-modal-container-footer">
+                    <a href="#!" class="m-modal-container-footer-a btn-close-service-modal">Cerrar</a>
+                    <a href="{{ route('front.contact') }}" class="m-modal-container-footer-b" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="show-service-modal-e" class="m-modal-container-bg">
+        <div class="m-modal-container">
+            <div class="m-modal-container-a">
+                <div class="m-modal-container-head" style='background-image: url("{{ asset('/media/slider/slider-0.png') }}");'>
+                    <div class="m-modal-container-head-title" style='background-image: url("{{ asset('/media/app/mindora-logo-white.png') }}");'>
+                        <p>Servicio</p>
+                        <h2>Inteligencia comercial</h2>
+                    </div>
+                </div>
+                <div class="m-modal-container-body">
+                    <h3 style="margin-bottom: 14px">Los clientes hoy más que nunca están mejor informados sobre nuestros productos y sobre los de la competencia que antes, mediante procesos de investigación online, sabe perfectamente lo que pueden ofrecerle. Por eso el objetivo de las herramientas de inteligencia comercial es facilitar la labor de todo comercial durante el ciclo de ventas, aportando la información que necesitan.</h3>
+                    <h3 style="margin-bottom: 14px">El conjunto de métodos, técnicas y mecanismos para recabar, registrar, analizar y difundir la información estratégica sobre: la competencia y el entorno es la inteligencia comercial, en otras palabras, es el hecho de conseguir y procesar la información necesaria para tomar decisiones relativas a la gestión comercial y de marketing en la empresa.</h3>
+                    <h3 style="margin-bottom: 14px">En Mindora consultores contamos con una estructura permanente compuesta por personas, equipos y procedimientos orientados a capturar, clasificar, analizar, evaluar y distribuir información pertinente, clara, oportuna, precisa y actual que soporte la toma de decisiones en cada una de las etapas del proceso de marketing de los sectores a los que nos dedicamos.</h3>
+
+                    <h4>Inteligencia comercial</h4>
+                    <ul>
+                        <li><strong>Mercadotecnia</strong> (Segmentación de mercados, análisis de tendencias y de clientes)</li>
+                        <li><strong>Ventas</strong> (Análisis de clientes y rentabilidad, análisis por producto, por segmento, proyecciones y pronósticos de ventas, análisis predictivos)</li>
+                    </ul>
+
+                    <h4>Realizando estudios enfocados en las siguientes fases:</h4>
+                    <ul>
+                        <li>Fichas ejecutivas de competidores actualizadas</li>
+                        <li>Perfiles de competidores completos</li>
+                        <li>Listado de nuevos clientes</li>
                     </ul>
 
                 </div>
@@ -160,8 +253,18 @@
             <div class="slider-bg-item">
                 <div class="slider-info-item">
                     <h2>Soluciones en</h2>
-                    <h1>Estudio de</h1>
+                    <h1>Estudios de</h1>
                     <h1>consumidor</h1>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-item" style='background-image: url("{{ asset('/media/slider/slider-4.png') }}");'>
+            <div class="slider-bg-item">
+                <div class="slider-info-item">
+                    <h2>Soluciones en</h2>
+                    <h1>Inteligencia</h1>
+                    <h1>comercial</h1>
                     <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
                 </div>
             </div>
@@ -202,8 +305,14 @@
         </div>
         <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-1.png') }}");'>
             <div class="services-container-item-bg">
-                <h3>Estudio de consumidor</h3>
+                <h3>Estudios de consumidor</h3>
                 <a id="btn-service-modal-b" href="#!">Leer más</a>
+            </div>
+        </div>
+        <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-4.png') }}");'>
+            <div class="services-container-item-bg">
+                <h3>Inteligencia comercial</h3>
+                <a id="btn-service-modal-e" href="#!">Leer más</a>
             </div>
         </div>
         <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-2.png') }}");'>
@@ -212,7 +321,7 @@
                 <a id="btn-service-modal-c" href="#!">Leer más</a>
             </div>
         </div>
-        <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-3.png') }}");'>
+        <div class="services-container-item last-item" style='background-image: url("{{ asset('/media/slider/slider-3.png') }}");'>
             <div class="services-container-item-bg">
                 <h3>Gestión de riesgos</h3>
                 <a id="btn-service-modal-d" href="#!">Leer más</a>
@@ -312,7 +421,7 @@
                 <img src="{{ asset('/media/app/mindora-logo.png') }}" alt="Mindora Consultores S.A. de C.V." width="81" height="82">
             </a>
             <h4>Quienes somos</h4>
-            <p>Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial comercial y farmacéutica.</p>
+            <p>Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial y farmacéutica.</p>
         </div>
         <div>
             <h4>Analytics e inteligencia comercial</h4>
@@ -328,11 +437,11 @@
             <section class="mision-vision-container">
                 <div style='background-image: url("{{ asset('/media/app/icon-people.png') }}");'>
                     <h2>Misión</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis, ante non molestie sagittis, felis turpis vulputate dui, et laoreet quam felis ut odio. Quisque ullamcorper consectetur dolor. Phasellus interdum consequat tortor quis egestas.</p>
+                    <p>Construir una opción real, profesional, comprometida oportuna y ética que permita desplegar y desarrollar las estrategias de nuestros clientes.</p>
                 </div>
                 <div style='background-image: url("{{ asset('/media/app/icon-people.png') }}");'>
                     <h2>Visión</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis, ante non molestie sagittis, felis turpis vulputate dui, et laoreet quam felis ut odio.</p>
+                    <p>Cimentar estrechas relaciones laborales y/o comerciales de mediano y largo plazo entre nuestros clientes, proveedores y accionistas de la empresa en busca del beneficio común.</p>
                 </div>
             </section>
         </section>
@@ -413,6 +522,11 @@
             $('#btn-service-modal-d').click(function () {
                 $('.m-modal-container-bg').fadeOut();
                 $('#show-service-modal-d').fadeIn();
+            });
+
+            $('#btn-service-modal-e').click(function () {
+                $('.m-modal-container-bg').fadeOut();
+                $('#show-service-modal-e').fadeIn();
             });
 
             $('.btn-close-service-modal').click(function () {

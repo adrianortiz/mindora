@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, p {
   padding: 0 auto;
   margin: 0 auto;
   max-width: 1024px;
-  height: 446px;
+  height: 400px;
   background-color: transparent;
   @include box-sizing(border-box);
   @include transition(.3s ease);
@@ -47,10 +47,10 @@ h1, h2, h3, h4, h5, p {
   .services-container-item {
     position: relative;
     float: left;
-    @include prefixer(width, calc(25% - 28px));
-    height: 310px;
+    @include prefixer(width, calc(20% - 18px));
+    height: 260px;
     background-color: $green-100;
-    margin: 14px;
+    margin: 9px;
 
     background-size: cover;
     background-position: center center;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, p {
         padding: 0;
         margin: 0;
         color: $white;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: 300;
         line-height: 30px;
         text-decoration: none;

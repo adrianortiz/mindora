@@ -66,7 +66,7 @@
             <a href="mailto:contacto@mindora.com.mx">contacto@mindora.com.mx</a>
         </p>
         <p>
-            <a href="tel:5537325400">Tel: (55) 3732 5400</a>
+            <a href="tel:5537325400">Tel: (55) 6481 1572</a>
         </p>
     </div>
 </div>
@@ -75,7 +75,7 @@
         <div class="header-container-a-items">
             <ul>
                 <li>
-                    <a href="tel:5537325400">Tel: (55) 3732 5400</a>
+                    <a href="tel:5537325400">Tel: (55) 6481 1572</a>
                 </li>
                 <li>
                     <a href="mailto:contacto@mindora.com.mx">Mail: contacto@mindora.com.mx</a>
@@ -135,11 +135,11 @@
             <a href="{{ route('front.index') }}">
                 <img src="{{ asset('/media/app/mindora.png') }}" alt="Mindora Consultores S.A. de C.V." width="118" height="41">
             </a>
-            <p><span>Mindora</span> Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial comercial y farmacéutica <span><a
+            <p><span>Mindora</span> Un equipo visionario con líderes especializados  con más de 14 años de experiencia en inteligencia comercial y farmacéutica <span><a
                             href="{{ route('front.contact') }}">Contáctanos.</a></span></p>
 
             <h2>Dirección</h2>
-            <p>Ciruelos 295 Fracc. Hacienda Santa Clara Lerma</p>
+            <p>Ciruelos 295, Santa Clara Lerma</p>
             <p>Estado de México</p>
             <p>C.P. 52004</p>
         </div>
@@ -149,7 +149,7 @@
                 E-mail: <a href="mailto:contacto@mindora.com.mx">contacto@mindora.com.mx</a>
             </p>
             <p>
-                Tel: <a href="tel:5537325400">(55) 3732 5400</a>
+                Tel: <a href="tel:5537325400">(55) 6481 1572</a>
             </p>
 
             <ul class="footer-contact">
