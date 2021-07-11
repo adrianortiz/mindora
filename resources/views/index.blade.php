@@ -237,6 +237,64 @@
         </div>
     </div>
 
+    <div id="show-service-modal-f" class="m-modal-container-bg">
+        <div class="m-modal-container">
+            <div class="m-modal-container-a">
+                <div class="m-modal-container-head" style='background-image: url("{{ asset('/media/slider/slider-5.png') }}");'>
+                    <div class="m-modal-container-head-title" style='background-image: url("{{ asset('/media/app/mindora-logo-white.png') }}");'>
+                        <p>Servicio</p>
+                        <h2>Calificación de áreas</h2>
+                    </div>
+                </div>
+                <div class="m-modal-container-body">
+                    <h3 style="margin-bottom: 14px">El  Área de CALIFICACIÓN de Mindora Consultores se especializa en la calificación de áreas, almacenes, equipos, termos de 2.0 a 8.0 °C/48hrs  y de 15.0 a 25.0 °C /48hrs,  así como en el mantenimiento del estado calificado.</h3>
+                    <h3 style="margin-bottom: 14px">Asegurando con ello el cumplimiento a normatividad vigente y aplicable como es: NOM-059, Suplemento para el almacenamiento y distribución de insumos para la salud, LGS, RIS, etc.</h3>
+                    <h3 style="margin-bottom: 14px">Contamos con más de 10 años de experiencia en el sector industrial y farmacéutico.</h3>
+
+                    <h4>¿Cuál es nuestro expertiz en CALIFICACIÓN?</h4>
+                    <h4>Somos expertos en la calificación de áreas y equipos como son:</h4>
+                    <ul>
+                        <li>Áreas con clasificación ISO 5, 6, 7, 8 y 9</li>
+                        <li>Almacenes</li>
+                        <li>Cámaras de refrigeración de 2.0 a 8.0 °C.</li>
+                        <li>Cámaras climáticas, incubadoras</li>
+                        <li>Mezcladores</li>
+                        <li>Tableteadoras, encapsuldoras</li>
+                        <li>Tanques, llenadoras, agitadores</li>
+                        <li>Hornos, desempolvadores</li>
+                        <li>Refrigeradores/congeladores</li>
+                        <li>Bombos</li>
+                        <li>Blisteadoras, etiquetadoras, codificadoras, engargoladoras y encartonadoras.</li>
+                        <li>Unidades de transporte con control de temperatura de 2.0 a 8.0 °C  y de 15.0 a 25.0 °C.</li>
+                        <li>Entre otros equipos</li>
+                    </ul>
+
+                    <h3 style="margin-bottom: 14px"><strong>Ofrecemos: </strong>Cumplimiento a NOM-059 “Calificación de Diseño, Calificación de Instalación, Calificación de Operación y Calificación de Desempeño”. Todo con un enfoque de análisis de riesgos.</h3>
+
+                    <h4>Calificación de Almacenes</h4>
+                    <div style="width: 100%; text-align: center; margin-top: 16px">
+                        <img style="width: 90%;" src="{{ asset('media/app/service-diagram-f-01.png') }}" alt="Flujo de riesgos de calidad" >
+                    </div>
+
+                    <h4>Calificación de Almacenes: Monitoreo  de temperatura y humedad relativa</h4>
+                    <div style="width: 100%; text-align: center; margin-top: 16px">
+                        <img style="width: 90%;" src="{{ asset('media/app/service-diagram-f-02.png') }}" alt="Flujo de riesgos de calidad" >
+                    </div>
+
+                    <h4>Calificación de Mezcladores</h4>
+                    <div style="width: 100%; text-align: center; margin-top: 16px">
+                        <img style="width: 90%;" src="{{ asset('media/app/service-diagram-f-03.png') }}" alt="Flujo de riesgos de calidad" >
+                    </div>
+
+                </div>
+                <div class="m-modal-container-footer">
+                    <a href="#!" class="m-modal-container-footer-a btn-close-service-modal">Cerrar</a>
+                    <a href="{{ route('front.contact') }}" class="m-modal-container-footer-b" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="autoplay-slider">
 
         <div class="slider-item" style='background-image: url("{{ asset('/media/slider/slider-1.png') }}");'>
@@ -290,6 +348,16 @@
             </div>
         </div>
 
+        <div class="slider-item" style='background-image: url("{{ asset('/media/slider/slider-5.png') }}");'>
+            <div class="slider-bg-item">
+                <div class="slider-info-item">
+                    <h2>Calificación de áreas</h2>
+                    <h1>Almacenes, equipos, termos</h1>
+                    <a href="{{ route('front.contact') }}" class="btn-slider" style='background-image: url("{{ asset('/media/app/icon-email-white.png') }}");'>Contacto</a>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section id="servicios" class="services-container">
@@ -321,10 +389,18 @@
                 <a id="btn-service-modal-c" href="#!">Leer más</a>
             </div>
         </div>
-        <div class="services-container-item last-item" style='background-image: url("{{ asset('/media/slider/slider-3.png') }}");'>
+        <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-3.png') }}");'>
             <div class="services-container-item-bg">
                 <h3>Gestión de riesgos</h3>
                 <a id="btn-service-modal-d" href="#!">Leer más</a>
+            </div>
+        </div>
+
+        <!-- last-item -->
+        <div class="services-container-item" style='background-image: url("{{ asset('/media/slider/slider-5.png') }}");'>
+            <div class="services-container-item-bg">
+                <h3>Calificación de áreas</h3>
+                <a id="btn-service-modal-f" href="#!">Leer más</a>
             </div>
         </div>
     </section>
@@ -527,6 +603,11 @@
             $('#btn-service-modal-e').click(function () {
                 $('.m-modal-container-bg').fadeOut();
                 $('#show-service-modal-e').fadeIn();
+            });
+
+            $('#btn-service-modal-f').click(function () {
+                $('.m-modal-container-bg').fadeOut();
+                $('#show-service-modal-f').fadeIn();
             });
 
             $('.btn-close-service-modal').click(function () {

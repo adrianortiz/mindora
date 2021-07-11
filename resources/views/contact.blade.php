@@ -75,6 +75,7 @@
                                     <option value="Inteligencia comercial" @if(old('service') == 'Inteligencia comercial') {{ 'selected="selected"' }} @endif >Inteligencia comercial</option>
                                     <option value="Validación de procesos" @if(old('service') == 'Validación de procesos') {{ 'selected="selected"' }} @endif >Validación de procesos</option>
                                     <option value="Gestión de riesgos" @if(old('service') == 'Gestión de riesgos') {{ 'selected="selected"' }} @endif >Gestión de riesgos</option>
+                                    <option value="Calificación de áreas" @if(old('service') == 'Calificación de áreas') {{ 'selected="selected"' }} @endif >Calificación de áreas</option>
                                 </select>
                                 @error('service')
                                 <span>{{ $message }}</span>

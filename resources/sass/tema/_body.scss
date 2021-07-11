@@ -44,10 +44,12 @@ h1, h2, h3, h4, h5, p {
     }
   }
 
+
+
   .services-container-item {
     position: relative;
     float: left;
-    @include prefixer(width, calc(20% - 18px));
+    @include prefixer(width, calc(16.66% - 18px));
     height: 260px;
     background-color: $green-100;
     margin: 9px;

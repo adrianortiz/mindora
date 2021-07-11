@@ -15,7 +15,7 @@
 
     .services-container-item {
       height: 210px;
-      @include prefixer(width, calc(20% - 14px));
+      @include prefixer(width, calc(16.66% - 14px));
       margin: 7px;
 
       .services-container-item-bg {
